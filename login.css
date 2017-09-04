@@ -1,0 +1,56 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    background-color: #B5B3B3;
+}
+body>h1 {
+    width: auto;
+    margin: 50px 35% 0;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 2px dashed gray;
+    text-shadow: .2em .1em .3em #000;
+}
+#loginBox {
+    width: 500px;   /*  fix width to 500, height auto */
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 1em .8em;
+    background-color: #66676A;
+    border-radius: .2em;    /* better relative to font size */
+    box-shadow: 0 -.2em 1em #66676A;
+    color: white;
+}
+#loginBox>form>fieldset input {
+    display: block;
+    padding: .6em;
+    margin: .5em auto;
+    width: 70%;
+    border-radius: .3em;
+    border: 2px solid black;
+    outline: none;  /*hack for google
+    ime-mode: disabled;     /* disable chinese charaters input */
+}
+#loginBox>form>input {
+    font-size: 15px;
+    border-radius: .4em;
+    border-style: groove;
+    cursor: pointer;
+    width: 45%;
+    margin: 1em 0;
+    padding: .1em 0;
+    display: inline-block;
+    background: -moz-linear-gradient(top, gray, #66676A);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(gray), to(#66676A));
+    background: -o-linear-gradient(top, gray, #66676A);
+    color: white;
+}
+#loginBox>form input[type="submit"] {
+    margin-left: 5%;
+}
+#loginBox>form>input:hover {
+    background: -moz-linear-gradient(top, #66676A, gray);
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#66676A), to(gray));
+    background: -o-linear-gradient(top, #66676A, gray);
+}
